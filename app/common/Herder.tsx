@@ -11,6 +11,11 @@ const Header = () => {
           variant="default"
           size="lg"
           className="bg-[#E5E5E5] text-black rounded-2xl"
+          onClick={() =>
+            document
+              .getElementById("admissions")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
         >
           Apply
         </Button>

@@ -109,7 +109,9 @@ const VideoShowcase = () => {
                 onClick={() => handlePlay(i)}
               >
                 <video
-                  ref={(el) => (videoRefs.current[i] = el)}
+                  ref={(el) => {
+                    videoRefs.current[i] = el;
+                  }}
                   src={video.src}
                   muted
                   className="w-full h-full object-cover"
