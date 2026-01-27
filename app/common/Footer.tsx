@@ -20,7 +20,7 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 <li>
                   <a
-                    href="#"
+                    href="https://iagainstitute.com/about-us"
                     className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base"
                   >
                     About us
@@ -28,7 +28,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://iagainstitute.com/courses"
                     className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base"
                   >
                     Courses
