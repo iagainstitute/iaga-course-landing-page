@@ -3,9 +3,10 @@ import React from "react";
 interface InfoCardProps {
   value: string;
   label: string;
+  originalValue?: string;
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ value, label }) => {
+const InfoCard: React.FC<InfoCardProps> = ({ value, label, originalValue }) => {
   return (
     <div
       className="
@@ -15,7 +16,12 @@ const InfoCard: React.FC<InfoCardProps> = ({ value, label }) => {
       border-t border-r  border-l border-pink-100  
     "
     >
-      <span className="text-lg md:text-3xl font-bold font-display text-white">
+      {originalValue && (
+        <span className="text-md md:text-2xl font-bold font-display text-white">
+          <s>{originalValue}</s>
+        </span>
+      )}
+      <span className="text-md md:text-3xl font-bold font-display text-white">
         {value}
       </span>
       <span className="text-md md:text-sm text-white ">{label}</span>

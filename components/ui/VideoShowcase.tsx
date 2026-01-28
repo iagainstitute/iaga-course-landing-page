@@ -91,7 +91,7 @@ const VideoShowcase = () => {
         </div>
 
         <h2 className="text-md md:text-3xl mb-2">
-          What premium output looks like
+          What premium output looks like:
         </h2>
 
         {/* Carousel */}

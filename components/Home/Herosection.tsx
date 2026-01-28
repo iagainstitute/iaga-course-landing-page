@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import InfoCard from "../ui/InfoCard";
 import CategoryTag from "../ui/CategoryTag";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CirclePlay } from "lucide-react";
 
 const HeroSection: React.FC = () => {
   const categories = [
@@ -33,7 +33,8 @@ const HeroSection: React.FC = () => {
           <span className="text-white text-md font-medium tracking-wide">
             New AI Program
           </span>
-          <Image src="/videoediting.png" alt="icon" width={25} height={25} />
+          {/* <Image src="/videoediting.png" alt="icon" width={25} height={25} /> */}
+          <CirclePlay className="text-white" />
         </div>
       </div>
 
@@ -61,7 +62,11 @@ const HeroSection: React.FC = () => {
 
           {/* Info Cards */}
           <div className="flex gap-4 mt-6 justify-center">
-            <InfoCard value="₹30,000" label="Course Fee" />
+            <InfoCard
+              value="₹ 30,000"
+              label="Course Fee"
+              originalValue="₹ 60,000"
+            />
             <InfoCard value="2 Months" label="Duration" />
           </div>
 
@@ -78,7 +83,7 @@ const HeroSection: React.FC = () => {
               Talk to a Counsellor
               <ArrowRight className="h-5 w-5 ml-2" />
             </Button>
-            <span className="text-white text-sm">Enroll Now</span>
+            {/* <span className="text-white text-sm">Enroll Now</span> */}
           </div>
         </div>
       </div>
