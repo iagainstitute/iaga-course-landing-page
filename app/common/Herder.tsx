@@ -1,12 +1,15 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="w-full bg-header border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Image src="/logo.png" alt="iaga-logo" width={220} height={200} />
+        <Link href="https://iagainstitute.com">
+          <Image src="/logo.png" alt="iaga-logo" width={220} height={200} />
+        </Link>
 
         <Button
           variant="default"
