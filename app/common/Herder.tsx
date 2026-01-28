@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="w-full bg-header border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="https://iagainstitute.com">
+        <Link href="https://iagainstitute.com/">
           <Image src="/logo.png" alt="iaga-logo" width={220} height={200} />
         </Link>
 
