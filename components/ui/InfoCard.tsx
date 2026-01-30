@@ -17,11 +17,11 @@ const InfoCard: React.FC<InfoCardProps> = ({ value, label, originalValue }) => {
     "
     >
       {originalValue && (
-        <span className="text-md md:text-2xl font-bold font-display text-white">
+        <span className="text-sm md:text-2xl font-bold font-display text-white">
           <s>{originalValue}</s>
         </span>
       )}
-      <span className="text-md md:text-3xl font-bold font-display text-white">
+      <span className="text-sm md:text-3xl font-bold font-display text-white">
         {value}
       </span>
       <span className="text-md md:text-sm text-white ">{label}</span>

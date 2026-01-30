@@ -25,7 +25,7 @@ export default function IndustryGradeVisuals() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-4">
+    <section className="relative overflow-hidden ">
       {/* 🔹 Badge (NO grid behind this) */}
       <div className="relative z-20 inline-flex items-center gap-2 px-4 py-1 mt-4  rounded-full border border-red-100 bg-background/90 backdrop-blur-md">
         <Image

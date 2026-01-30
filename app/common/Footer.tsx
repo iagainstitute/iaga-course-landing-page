@@ -78,7 +78,7 @@ export default function Footer() {
                     href="https://iagainstitute.com/terms-condition"
                     className="text-gray-300 hover:text-white transition-colors underline text-sm sm:text-base"
                   >
-                    Teams and conditions
+                    Terms and conditions
                   </a>
                 </li>
               </ul>

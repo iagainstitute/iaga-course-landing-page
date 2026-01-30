@@ -7,17 +7,15 @@ import Polishediaga from "@/components/Home/Polishediaga";
 import PortfolioJoinCard from "@/components/Home/Portfolio";
 import ProcessGrid from "@/components/Home/Processgrid";
 import WhyIAGA from "@/components/Home/real-creative-studio";
-import VideoShowcase from "@/components/ui/VideoShowcase";
 
 function Index() {
   return (
     <>
-      {/* Full Width Hero */}
+      {/* Full Width Hero with integrated Video Showcase */}
       <HeroSection />
 
       {/* Rest content in container */}
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-6xl">
-        <VideoShowcase />
         <IndustryGradeVisuals />
         <Polishediaga />
         <CreatorJoinCard />
