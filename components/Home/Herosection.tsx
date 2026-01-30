@@ -196,6 +196,10 @@ const HeroSection: React.FC = () => {
                     }}
                     src={video.src}
                     muted
+                    playsInline
+                    webkit-playsinline="true"
+                    controls={false}
+                    preload="metadata"
                     className="w-full h-full object-cover"
                     poster={video.thumb}
                   />
