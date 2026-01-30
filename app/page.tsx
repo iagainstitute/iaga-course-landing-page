@@ -1,12 +1,17 @@
-import AdmissionsForm from "@/components/Home/Admission";
-import CreatorJoinCard from "@/components/Home/CreatorJoinCard";
-import HeroSection from "@/components/Home/Herosection";
-import IndustryGradeVisuals from "@/components/Home/Industry-grade-visuals";
-import JourneyCard from "@/components/Home/Journey";
-import Polishediaga from "@/components/Home/Polishediaga";
-import PortfolioJoinCard from "@/components/Home/Portfolio";
-import ProcessGrid from "@/components/Home/Processgrid";
-import WhyIAGA from "@/components/Home/real-creative-studio";
+import dynamic from "next/dynamic";
+const AdmissionsForm = dynamic(() => import("@/components/Home/Admission"));
+const CreatorJoinCard = dynamic(
+  () => import("@/components/Home/CreatorJoinCard"),
+);
+const HeroSection = dynamic(() => import("@/components/Home/Herosection"));
+const IndustryGradeVisuals = dynamic(
+  () => import("@/components/Home/Industry-grade-visuals"),
+);
+const JourneyCard = dynamic(() => import("@/components/Home/Journey"));
+const Polishediaga = dynamic(() => import("@/components/Home/Polishediaga"));
+const PortfolioJoinCard = dynamic(() => import("@/components/Home/Portfolio"));
+const ProcessGrid = dynamic(() => import("@/components/Home/Processgrid"));
+const WhyIAGA = dynamic(() => import("@/components/Home/real-creative-studio"));
 
 function Index() {
   return (
