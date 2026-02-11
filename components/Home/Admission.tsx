@@ -22,7 +22,7 @@ export default function AdmissionsForm() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message: `@here\n Name: ${formData.name}\n Phone: ${formData.phone}\n Source: ${formData.source}`,
+          message: `<!here>\n Name: ${formData.name}\n Phone: ${formData.phone}\n Source: ${formData.source}`,
         }),
       });
 
